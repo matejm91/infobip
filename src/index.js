@@ -4,9 +4,11 @@ import { BrowserRouter } from 'react-router-dom';
 import 'index.css';
 import reportWebVitals from 'reportWebVitals';
 import appRouter from 'components/appRouter';
+import UserInfo from 'components/user/UserInfo';
 
 ReactDOM.render(
   <React.StrictMode>
+    <UserInfo />
     <BrowserRouter>{appRouter}</BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
